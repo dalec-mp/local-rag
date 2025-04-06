@@ -32,3 +32,14 @@ Learn More:
 - [Known Bugs & Issues](docs/todo.md#known-issues--bugs)
 - [Resources](docs/resources.md)
 - [Contributing](docs/contributing.md)
+
+
+
+
+Notes from Dale
+---------------
+At the end of installation, this app loaded on the browser with the import error, no module named coloroma (which in the Pipfile is mentioned as win32 depedency). Remove that, run
+- pipenv install --python=3.13
+- docker buildx build --platform linux/arm64 -t local-rag --load .
+- docker run -d -p 8501:8501 local-rag run main.py --server.port=8501 --server.address=0.0.0.0
+

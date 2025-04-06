@@ -1,7 +1,7 @@
-version: '3'
 services:
   local-rag:
     container_name: local-rag
+    platform: linux/arm64
     image: jonfairbanks/local-rag
     restart: unless-stopped
     environment:

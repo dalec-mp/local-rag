@@ -18,11 +18,11 @@ streamlit-tags = "*"
 streamlit-extras = "*"
 black = "*"
 torch = { version = "*", sys_platform = "!= 'darwin'" }
-colorama = { version = "*", sys_platform = "== 'win32'" }
 ebooklib = "*"
 llama-index-core = "*"
+matplotlib = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.13"

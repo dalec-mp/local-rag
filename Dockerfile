@@ -1,4 +1,10 @@
-FROM python:3.10-slim as base
+ #updated to 3.13-rc-slim
+FROM python:3.13-rc-slim as base
+
+# Explicitly set platform requirements, added to fix error
+ARG TARGETPLATFORM
+ARG BUILDPLATFORM
+RUN echo "Building on $BUILDPLATFORM, targeting $TARGETPLATFORM"
 
 # Setup env
 ENV LANG C.UTF-8
