@@ -42,4 +42,4 @@ At the end of installation, this app loaded on the browser with the import error
 - pipenv install --python=3.13
 - docker buildx build --platform linux/arm64 -t local-rag --load .
 - docker run -d -p 8501:8501 local-rag run main.py --server.port=8501 --server.address=0.0.0.0
-
+- cannot access ollama running on the host machine

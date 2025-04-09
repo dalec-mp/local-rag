@@ -17,10 +17,11 @@ html2text = "*"
 streamlit-tags = "*"
 streamlit-extras = "*"
 black = "*"
-torch = { version = "*", sys_platform = "!= 'darwin'" }
 ebooklib = "*"
 llama-index-core = "*"
 matplotlib = "*"
+filelock = "*"
+torch = "*"
 
 [dev-packages]
 
