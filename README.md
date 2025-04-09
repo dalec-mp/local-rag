@@ -36,10 +36,19 @@ Learn More:
 
 
 
-Notes from Dale
+Notes
 ---------------
 At the end of installation, this app loaded on the browser with the import error, no module named coloroma (which in the Pipfile is mentioned as win32 depedency). Remove that, run
 - pipenv install --python=3.13
 - docker buildx build --platform linux/arm64 -t local-rag --load .
 - docker run -d -p 8501:8501 local-rag run main.py --server.port=8501 --server.address=0.0.0.0
 - cannot access ollama running on the host machine
+
+Attempt to run locally
+------------------------
+- Host machine has Python 3.13
+- Had to manually install some python packages
+  - `pipenv shell`
+  -  `streamlit run main.py`
+- updated the code to read model names correctly
+- Test run of app by providing context via website link and asking questions - worked!
